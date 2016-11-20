@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import Darwin
 
 enum MemoryRegionAccess: String {
     case read = "r"
