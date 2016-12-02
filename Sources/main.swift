@@ -6,4 +6,6 @@
 //
 //
 
-App.run(arguments: CommandLine.arguments)
+import CGtk
+
+Application.instance.launch()

@@ -8,6 +8,7 @@
 
 import Foundation
 
+
 typealias ProcessId = UInt
 
 enum ProcessInfoFields: Int {
@@ -25,7 +26,7 @@ enum ProcessState: String {
     case dead = "X"
 }
 
-struct Process {
+private struct Process {
     
     let id: ProcessId
     let directoryPath: String
@@ -62,7 +63,7 @@ struct Process {
     }
 }
 
-struct ProcessInfo {
+private struct ProcessInfo {
     let process: Process
     private(set) var id: ProcessId!
     private(set) var name: String!
